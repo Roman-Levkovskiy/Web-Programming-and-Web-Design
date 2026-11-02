@@ -1,0 +1,372 @@
+```html
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        table {
+            margin-bottom: 20px;
+        }
+
+        .table1 {
+            width: 75%;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .table1 td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .table2 {
+            margin-left: auto;
+            border: 5px double black;
+            border-spacing: 3px;
+            background-color: lightblue;
+        }
+
+        .table2 td {
+            border: 1px solid navy;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .table3 {
+            width: 80%;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .table3 td {
+            border: 1px solid black;
+            padding: 15px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .table4 {
+            width: 90%;
+            border-collapse: collapse;
+        }
+
+        .table4 th,
+        .table4 td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .table5 {
+            width: 75%;
+            border-collapse: collapse;
+        }
+
+        .table5 th,
+        .table5 td {
+            border: 1px solid black;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .table5 th {
+            background-color: lightgray;
+        }
+
+        .magazine {
+            width: 100%;
+            border: none;
+            border-spacing: 20px 10px;
+        }
+
+        .magazine td {
+            border: none;
+            width: 50%;
+            vertical-align: top;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Лабораторна робота №3</h1>
+
+    <!-- Завдання 1 -->
+    <section>
+        <h2>Завдання 1. Таблиця шириною 75%</h2>
+
+        <table class="table1">
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    Заголовок
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">
+                    Дані, вирівняні по лівому краю комірки
+                </td>
+                <td style="text-align: right;">
+                    Дані, вирівняні по правому краю комірки
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 25%;">
+                    25% ширини таблиці
+                </td>
+                <td style="width: 75%;">
+                    75% ширини таблиці
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Завдання 2 -->
+    <section>
+        <h2>Завдання 2. Таблиця 5 × 4</h2>
+
+        <table class="table2">
+            <tr>
+                <td>Комірка 1</td>
+                <td>Комірка 2</td>
+                <td>Комірка 3</td>
+                <td>Комірка 4</td>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td>Текст</td>
+                <td>Дані</td>
+            </tr>
+            <tr>
+                <td>Рядок 3</td>
+                <td>Комірка 6</td>
+                <td>Комірка 7</td>
+                <td>Комірка 8</td>
+            </tr>
+            <tr>
+                <td>Рядок 4</td>
+                <td>Комірка 10</td>
+                <td>Комірка 11</td>
+                <td>Комірка 12</td>
+            </tr>
+            <tr>
+                <td>Рядок 5</td>
+                <td>Комірка 14</td>
+                <td>Комірка 15</td>
+                <td>Комірка 16</td>
+            </tr>
+        </table>
+    </section>
+
+<!-- Завдання 3 -->
+<section>
+    <h2>Завдання 3. Об'єднання комірок</h2>
+
+    <table class="table3">
+        <tr>
+            <td colspan="3"></td>
+            <td rowspan="2"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td rowspan="2"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="2"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="2"></td>
+        </tr>
+    </table>
+</section>
+
+    
+<!-- Завдання 4 -->
+<section>
+    <h2>Завдання 4. Таблиця з назвою та заголовками</h2>
+
+    <table class="table4">
+        <caption>Таблиця чисел</caption>
+        <thead>
+            <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="text-align: left;">
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr style="text-align: right;">
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>1</td>
+            </tr>
+            <tr style="text-align: left;">
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr style="text-align: right;">
+                <td>6</td>
+                <td>7</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>7</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+<!-- Завдання 5 -->
+<section>
+    <h2>Завдання 5. Характеристики спеціальностей</h2>
+
+    <table class="table5">
+        <tr>
+            <td rowspan="2" colspan="2"></td>
+            <th colspan="2">Характеристики</th>
+        </tr>
+        <tr>
+            <th>Кількість студентів</th>
+            <th>Якість успішності</th>
+        </tr>
+        <tr>
+            <th rowspan="5">Спеціальність</th>
+            <td rowspan="2">Комп'ютерна<br> інженерія</td>
+            <td rowspan="2">250</td>
+            <td rowspan="2">80%</td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td rowspan="2">Телекомунікації<br> та радіотехніка</td>
+            <td rowspan="2">200</td>
+            <td rowspan="2">75%</td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td>Електромеханіка</td>
+            <td>150</td>
+            <td>85%</td>
+        </tr>
+    </table>
+</section>
+
+    <!-- Завдання 6 -->
+    <section>
+        <h2>Завдання 6. Журнальна сторінка у дві колонки</h2>
+
+        <table class="magazine">
+            <tr>
+                <td colspan="2">
+                    <h2 style="text-align: center;">
+                        Технології, що змінюють світ
+                    </h2>
+                    <p>
+                        Сучасні технології відіграють важливу роль у житті
+                        суспільства. Комп'ютери, мобільні пристрої та мережа
+                        Інтернет допомагають людям спілкуватися, навчатися
+                        й працювати. Розвиток цифрових технологій відкриває
+                        нові можливості для науки, освіти та промисловості.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Роль комп'ютерів</h3>
+                    <p>
+                        Комп'ютери використовуються практично в усіх сферах
+                        діяльності людини. Вони дають змогу швидко обробляти
+                        великі обсяги інформації, виконувати складні
+                        обчислення та автоматизувати повсякденні завдання.
+                    </p>
+                    <p>
+                        У навчанні комп'ютери забезпечують доступ до
+                        електронних бібліотек, освітніх платформ і
+                        інтерактивних матеріалів. Завдяки цьому студенти
+                        можуть отримувати знання незалежно від свого
+                        місцезнаходження.
+                    </p>
+                </td>
+                <td>
+                    <h3>Майбутнє інформаційних технологій</h3>
+                    <p>
+                        Одним із найважливіших напрямів розвитку є штучний
+                        інтелект. Він допомагає аналізувати дані, розпізнавати
+                        зображення, перекладати тексти та розв'язувати
+                        різноманітні практичні завдання.
+                    </p>
+                    <p>
+                        Не менш важливими є кібербезпека та захист персональних
+                        даних. Зі збільшенням кількості цифрових сервісів
+                        зростає потреба в надійних методах збереження
+                        інформації. Тому знання інформаційних технологій
+                        стають необхідними для сучасної людини.
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+</body>
+</html>
+```
