@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота №7</title>
+</head>
+<body>
+
+<h1>Лабораторна робота №7</h1>
+
+<h2>Завдання 1. Елементи HTML-форми</h2>
+
+<form action="#" method="post">
+    <table border="1" cellpadding="6">
+        <tr>
+            <td>Текстове поле:</td>
+            <td><input type="text" name="text"></td>
+        </tr>
+        <tr>
+            <td>Електронна пошта:</td>
+            <td><input type="email" name="email"></td>
+        </tr>
+        <tr>
+            <td>Пароль:</td>
+            <td><input type="password" name="password"></td>
+        </tr>
+        <tr>
+            <td>Стать:</td>
+            <td>
+                <input type="radio" name="gender" value="male"> Чоловіча
+                <input type="radio" name="gender" value="female"> Жіноча
+            </td>
+        </tr>
+        <tr>
+            <td>Список:</td>
+            <td>
+                <select name="city">
+                    <option>Київ</option>
+                    <option>Полтава</option>
+                    <option>Львів</option>
+                    <option>Харків</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Прапорці:</td>
+            <td>
+                <input type="checkbox" name="option1"> Варіант 1
+                <input type="checkbox" name="option2"> Варіант 2
+            </td>
+        </tr>
+        <tr>
+            <td>Коментар:</td>
+            <td><textarea name="comment" rows="4" cols="30"></textarea></td>
+        </tr>
+        <tr>
+            <td>Файл:</td>
+            <td><input type="file" name="file"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Відправити">
+                <input type="reset" value="Очистити">
+                <input type="button" value="Показати дату"
+                       onclick="alert(new Date().toLocaleDateString())">
+            </td>
+        </tr>
+    </table>
+</form>
+
+<h2>Завдання 2. Анкета студента</h2>
+
+<form action="#" method="post">
+    <table border="1" cellpadding="6">
+        <tr>
+            <td>ПІБ:</td>
+            <td><input type="text" name="fullname" required></td>
+        </tr>
+        <tr>
+            <td>Дата народження:</td>
+            <td><input type="date" name="birthdate"></td>
+        </tr>
+        <tr>
+            <td>Електронна пошта:</td>
+            <td><input type="email" name="student_email"></td>
+        </tr>
+        <tr>
+            <td>Стать:</td>
+            <td>
+                <input type="radio" name="student_gender" value="male"> Чоловіча
+                <input type="radio" name="student_gender" value="female"> Жіноча
+            </td>
+        </tr>
+        <tr>
+            <td>Форма навчання:</td>
+            <td>
+                <select name="study">
+                    <option>Денна</option>
+                    <option>Заочна</option>
+                    <option>Дистанційна</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Курс:</td>
+            <td>
+                <select name="course">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Улюблені предмети:</td>
+            <td>
+                <input type="checkbox" name="subject" value="programming"> Програмування<br>
+                <input type="checkbox" name="subject" value="math"> Математика<br>
+                <input type="checkbox" name="subject" value="english"> Англійська мова
+            </td>
+        </tr>
+        <tr>
+            <td>Хобі:</td>
+            <td><textarea name="hobbies" rows="3" cols="30"></textarea></td>
+        </tr>
+        <tr>
+            <td>Очікування від навчання:</td>
+            <td><textarea name="expectations" rows="3" cols="30"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Надіслати">
+                <input type="reset" value="Очистити">
+            </td>
+        </tr>
+    </table>
+</form>
+
+<h2>Завдання 3. Замовлення товару</h2>
+
+<form action="#" method="post">
+    <table border="1" cellpadding="6">
+        <tr>
+            <td>Номер банківського рахунку:</td>
+            <td><input type="text" name="account_number" required></td>
+        </tr>
+        <tr>
+            <td>Особистий номер користувача:</td>
+            <td><input type="text" name="user_number" required></td>
+        </tr>
+        <tr>
+            <td>Товари:</td>
+            <td>
+                <select name="products" multiple size="4">
+                    <option value="laptop">Ноутбук</option>
+                    <option value="phone">Смартфон</option>
+                    <option value="tablet">Планшет</option>
+                    <option value="headphones">Навушники</option>
+                    <option value="monitor">Монітор</option>
+                </select>
+                <br>
+                <small>Для вибору декількох товарів утримуйте Ctrl.</small>
+            </td>
+        </tr>
+        <tr>
+            <td>Коментарі:</td>
+            <td><textarea name="comments" rows="4" cols="30"></textarea></td>
+        </tr>
+        <tr>
+            <td>Спосіб оплати:</td>
+            <td>
+                <input type="radio" name="payment" value="cash" required> Готівковий розрахунок<br>
+                <input type="radio" name="payment" value="cashless"> Безготівковий розрахунок
+            </td>
+        </tr>
+        <tr>
+            <td>Додаткова інформація:</td>
+            <td>
+                <input type="checkbox" name="balance" value="yes">
+                Дані про залишки на рахунку<br>
+                <input type="checkbox" name="payments" value="yes">
+                Список останніх виплат по рахунку
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Оформити замовлення">
+                <input type="reset" value="Очистити форму">
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
