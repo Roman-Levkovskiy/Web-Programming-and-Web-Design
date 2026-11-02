@@ -1,0 +1,24 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420">
+<rect width="800" height="420" fill="#f3f6fb"/>
+
+<text x="400" y="42" text-anchor="middle"
+      font-family="Arial" font-size="26">
+    Україна: геометричні символи
+</text>
+
+<circle cx="145" cy="220" r="90"
+        fill="#ffd84d" stroke="#17365d" stroke-width="5"/>
+<text x="145" y="225" text-anchor="middle"
+      font-family="Arial" font-size="22">Київ</text>
+
+<rect x="305" y="130" width="190" height="180"
+      fill="#70b7e6" stroke="#17365d" stroke-width="5"/>
+<text x="400" y="225" text-anchor="middle"
+      font-family="Arial" font-size="22">Карпати</text>
+
+<polygon points="640,115 730,185 695,300 585,300 550,185"
+         fill="#83c98b" stroke="#17365d" stroke-width="5"/>
+<text x="640" y="220" text-anchor="middle"
+      font-family="Arial" font-size="20">Історія</text>
+</svg>

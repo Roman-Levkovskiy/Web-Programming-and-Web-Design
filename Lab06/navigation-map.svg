@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500">
+<rect width="800" height="500" fill="#eaf3e4"/>
+
+<path d="M110 120 L270 70 L390 115 L520 80 L700 145
+L660 270 L710 360 L560 420 L420 390 L300 440
+L160 350 L80 240 Z"
+fill="#d2e7bd" stroke="#496b43" stroke-width="7"/>
+
+<path d="M110 120 L270 70 L300 210 L180 270 L80 240 Z"
+fill="#a9d6ef" stroke="#496b43" stroke-width="4"/>
+
+<path d="M270 70 L520 80 L500 230 L300 210 Z"
+fill="#f6d78b" stroke="#496b43" stroke-width="4"/>
+
+<path d="M520 80 L700 145 L660 270 L500 230 Z"
+fill="#e8b0a8" stroke="#496b43" stroke-width="4"/>
+
+<path d="M180 270 L300 210 L420 390 L300 440 L160 350 Z"
+fill="#c5b1e8" stroke="#496b43" stroke-width="4"/>
+
+<path d="M300 210 L500 230 L560 420 L420 390 Z"
+fill="#9ed3bd" stroke="#496b43" stroke-width="4"/>
+
+<path d="M500 230 L660 270 L710 360 L560 420 Z"
+fill="#f0c5dc" stroke="#496b43" stroke-width="4"/>
+
+<g font-family="Arial" font-size="21" text-anchor="middle">
+    <text x="185" y="180">Північ</text>
+    <text x="395" y="155">Центр</text>
+    <text x="605" y="185">Схід</text>
+    <text x="245" y="350">Захід</text>
+    <text x="430" y="315">Південь</text>
+    <text x="615" y="345">Узбережжя</text>
+</g>
+
+<text x="400" y="35" text-anchor="middle"
+      font-family="Arial" font-size="26">
+    Навігаційна карта України
+</text>
+</svg>

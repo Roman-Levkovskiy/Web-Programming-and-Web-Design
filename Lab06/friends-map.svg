@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360">
+<rect width="900" height="360" fill="#f3f6fb"/>
+
+<g text-anchor="middle" font-family="Arial">
+
+    <rect x="25" y="25" width="265" height="310" rx="14"
+          fill="#d9e8f5" stroke="#315b7d" stroke-width="4"/>
+    <circle cx="157" cy="135" r="65" fill="#91b5d2"/>
+    <circle cx="157" cy="112" r="25" fill="#f1d1b5"/>
+    <path d="M100 205 Q157 145 214 205 L230 260 L84 260 Z"
+          fill="#527b9d"/>
+    <text x="157" y="305" font-size="22">Андрій</text>
+
+    <rect x="317" y="25" width="265" height="310" rx="14"
+          fill="#e9dfef" stroke="#70527d" stroke-width="4"/>
+    <circle cx="449" cy="135" r="65" fill="#c0a4cc"/>
+    <circle cx="449" cy="112" r="25" fill="#f1d1b5"/>
+    <path d="M392 205 Q449 145 506 205 L522 260 L376 260 Z"
+          fill="#896c9a"/>
+    <text x="449" y="305" font-size="22">Максим</text>
+
+    <rect x="609" y="25" width="265" height="310" rx="14"
+          fill="#e2eddf" stroke="#52734d" stroke-width="4"/>
+    <circle cx="741" cy="135" r="65" fill="#a8c49e"/>
+    <circle cx="741" cy="112" r="25" fill="#f1d1b5"/>
+    <path d="M684 205 Q741 145 798 205 L814 260 L668 260 Z"
+          fill="#6d9165"/>
+    <text x="741" y="305" font-size="22">Олександр</text>
+
+</g>
+</svg>

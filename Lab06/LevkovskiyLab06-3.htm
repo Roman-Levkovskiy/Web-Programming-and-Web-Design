@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Моя Батьківщина — Україна</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f5fa;
+            margin: 30px;
+            color: #222;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0057a8;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .photo {
+            position: relative;
+            width: 300px;
+        }
+
+        .photo img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border: 3px solid #0057a8;
+            border-radius: 8px;
+        }
+
+        .tooltip {
+            visibility: hidden;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .photo:hover .tooltip {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Моя Батьківщина — Україна</h1>
+
+    <p>
+        Україна — моя Батьківщина, країна з багатою історією,
+        красивою природою та унікальною культурою.
+        Тут є старовинні міста, гори, річки та мальовничі краєвиди.
+    </p>
+
+    <div class="gallery">
+
+        <div class="photo">
+            <img src="https://images.unsplash.com/photo-1561542320-9a18cd340469?w=600"
+                 alt="Київ">
+            <div class="tooltip">
+                Київ — столиця України, місто з давньою історією
+                та відомими архітектурними пам'ятками.
+            </div>
+        </div>
+
+        <div class="photo">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600"
+                 alt="Карпати">
+            <div class="tooltip">
+                Карпати — гірський регіон України з лісами,
+                річками та мальовничими вершинами.
+            </div>
+        </div>
+
+        <div class="photo">
+            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=600"
+                 alt="Гори">
+            <div class="tooltip">
+                Українська природа відома своїми горами,
+                чистим повітрям і красивими краєвидами.
+            </div>
+        </div>
+
+        <div class="photo">
+            <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=600"
+                 alt="Архітектура">
+            <div class="tooltip">
+                Українські міста поєднують сучасну архітектуру
+                та історичні будівлі.
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
